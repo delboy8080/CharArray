@@ -113,3 +113,18 @@ CharArray::~CharArray()
 	delete[] arr;
 	arr = nullptr;
 }
+
+ostream& operator<<(ostream& out, CharArray& other)
+{
+	out << "[";
+	for (int i = 0; i < other.top; i++)
+	{
+		if (i != 0)
+		{
+			out << ",";
+		}
+		out << other.arr[i];
+	}
+	out << "]" << std::endl;
+	return out;
+}

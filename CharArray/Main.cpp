@@ -4,14 +4,7 @@ using namespace std;
 
 void display(CharArray arr)
 {
-	cout << "[";
-	for (int i = 0; i < arr.size(); i++)
-	{
-		if (i != 0)
-			cout << ", ";
-		cout << arr.get(i);
-	}
-	cout << "]" << endl;
+	cout << arr;
 }
 
 int main()

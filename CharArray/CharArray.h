@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+using std::ostream;
 class CharArray
 {
 	char* arr;
@@ -16,6 +17,7 @@ public:
 	bool set(char c, int index);
 	int size();
 	CharArray& operator=(CharArray& other);
+	friend ostream& operator<<(ostream& out, CharArray& other);
 	~CharArray();
 };
 
