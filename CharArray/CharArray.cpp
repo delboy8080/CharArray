@@ -11,7 +11,7 @@ CharArray::CharArray(const CharArray& other)
 	capacity = other.capacity;
 	top = other.top;
 	arr = new char[capacity];
-	for (int i = 0; i < top; i++)//test
+	for (int i = 0; i < top; i++)
 	{
 		arr[i] = other.arr[i];
 	}
