@@ -34,4 +34,14 @@ int main()
 		arr.remove( i);
 	}
 	display(arr);
+	CharArray copy;
+	for (int i = 97; i < 122; i++)
+	{
+		copy.add(i);
+	}
+	cout << "Copy: ";
+	display(copy);
+	arr = copy;
+	cout << "Arr: ";
+	display(arr);
 }

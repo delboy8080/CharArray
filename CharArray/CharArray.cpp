@@ -19,6 +19,7 @@ CharArray::CharArray(const CharArray& other)
 
 CharArray& CharArray::operator=(CharArray& other)
 {
+	std::cout << "Assignment Operator Called" << std::endl;
 	if (this == &other)
 		return *this;
 
